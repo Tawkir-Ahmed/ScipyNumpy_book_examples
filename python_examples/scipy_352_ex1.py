@@ -19,7 +19,7 @@ def clusters(number=20, cnumber=5, csize=10):
 
     # Random multipliers for central point of cluster
     rxyz = np.random.randn(cnumber - 1, 3)
-    for i in xrange(cnumber - 1):
+    for i in range(cnumber - 1):
         tmp = np.random.randn(rn[i + 1], 3)
         x = tmp[:, 0] + (rxyz[i, 0] * csize)
         y = tmp[:, 1] + (rxyz[i, 1] * csize)
